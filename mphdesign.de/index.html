@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="mphdesign - Premium Web Design Agency. We craft stunning digital experiences with elegant aesthetics and cutting-edge technology.">
+  <meta name="keywords" content="web design, web development, UI/UX, branding, digital agency">
+  <meta name="author" content="mphdesign">
+  
+  <title>mphdesign | Premium Web Design Agency</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <img src="assets/logo.png" alt="mphdesign logo">
+        <span class="nav-logo-text">mphdesign</span>
+      </a>
+      
+      <div class="nav-menu" id="navMenu">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#philosophy" class="nav-link">Philosophy</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#blog" class="nav-link">Blog</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero section" id="hero">
+    <img src="assets/logo.png" alt="mphdesign" class="hero-logo">
+    <h1 class="hero-title">mphdesign</h1>
+    <p class="hero-subtitle">Crafting Digital Excellence</p>
+    
+    <div class="hero-scroll">
+      <span class="hero-scroll-text">Scroll</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Services</h2>
+        <p class="section-subtitle">Premium solutions tailored to elevate your digital presence</p>
+      </div>
+      
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <path d="M3 9h18"/>
+              <path d="M9 21V9"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Web Design</h3>
+          <p class="service-description">Bespoke website designs that captivate audiences and reflect your brand's unique identity with pixel-perfect precision.</p>
+        </div>
+        
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/>
+              <path d="M2 12h20"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Branding</h3>
+          <p class="service-description">Comprehensive brand identities that communicate your vision through strategic design and cohesive visual language.</p>
+        </div>
+        
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 19l7-7 3 3-7 7-3-3z"/>
+              <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
+              <path d="M2 2l7.586 7.586"/>
+              <circle cx="11" cy="11" r="2"/>
+            </svg>
+          </div>
+          <h3 class="service-title">UI/UX Design</h3>
+          <p class="service-description">Intuitive user experiences crafted through research-driven design, ensuring seamless interactions across all touchpoints.</p>
+        </div>
+        
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <polyline points="16 18 22 12 16 6"/>
+              <polyline points="8 6 2 12 8 18"/>
+              <line x1="12" y1="2" x2="12" y2="22"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Development</h3>
+          <p class="service-description">Clean, performant code that brings designs to life with modern technologies and best practices for scalability.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Philosophy Section -->
+  <section class="philosophy section" id="philosophy">
+    <div class="container">
+      <div class="philosophy-content">
+        <blockquote class="philosophy-quote reveal">
+          Design is not just what it looks like. Design is how it works — and how it feels.
+        </blockquote>
+        
+        <p class="philosophy-text reveal">
+          At mphdesign, we believe that exceptional digital experiences emerge from the perfect 
+          harmony of aesthetics and functionality. Every pixel, every interaction, every moment 
+          is crafted with intention and purpose.
+        </p>
+        
+        <p class="philosophy-text reveal">
+          We approach each project as a unique opportunity to create something meaningful — 
+          designs that not only capture attention but resonate deeply with their audiences.
+        </p>
+        
+        <div class="philosophy-values">
+          <div class="philosophy-value reveal">
+            <div class="philosophy-value-icon">◆</div>
+            <h4 class="philosophy-value-title">Precision</h4>
+            <p class="philosophy-value-text">Every detail matters</p>
+          </div>
+          
+          <div class="philosophy-value reveal">
+            <div class="philosophy-value-icon">◇</div>
+            <h4 class="philosophy-value-title">Innovation</h4>
+            <p class="philosophy-value-text">Pushing boundaries</p>
+          </div>
+          
+          <div class="philosophy-value reveal">
+            <div class="philosophy-value-icon">○</div>
+            <h4 class="philosophy-value-title">Elegance</h4>
+            <p class="philosophy-value-text">Timeless sophistication</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="section" id="portfolio">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Portfolio</h2>
+        <p class="section-subtitle">A curated selection of our finest work</p>
+      </div>
+      
+      <div class="portfolio-grid">
+        <div class="portfolio-item featured reveal-scale" id="portfolio-1">
+          <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&h=800&fit=crop" alt="Geometric Abstract">
+          <div class="portfolio-overlay">
+            <span class="portfolio-category">Branding</span>
+            <h3 class="portfolio-title">Nexus Identity</h3>
+          </div>
+        </div>
+        
+        <div class="portfolio-item reveal-scale" id="portfolio-2">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=600&fit=crop" alt="Digital Art">
+          <div class="portfolio-overlay">
+            <span class="portfolio-category">Web Design</span>
+            <h3 class="portfolio-title">Minimal Studio</h3>
+          </div>
+        </div>
+        
+        <div class="portfolio-item reveal-scale" id="portfolio-3">
+          <img src="https://images.unsplash.com/photo-1634017839464-5c339bbe3c35?w=600&h=600&fit=crop" alt="3D Render">
+          <div class="portfolio-overlay">
+            <span class="portfolio-category">UI/UX</span>
+            <h3 class="portfolio-title">Flow Dashboard</h3>
+          </div>
+        </div>
+        
+        <div class="portfolio-item reveal-scale" id="portfolio-4">
+          <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=600&h=600&fit=crop" alt="Tech Abstract">
+          <div class="portfolio-overlay">
+            <span class="portfolio-category">Development</span>
+            <h3 class="portfolio-title">React Platform</h3>
+          </div>
+        </div>
+        
+        <div class="portfolio-item reveal-scale" id="portfolio-5">
+          <img src="https://images.unsplash.com/photo-1618556450991-2f1af64e8191?w=600&h=600&fit=crop" alt="Gradient Art">
+          <div class="portfolio-overlay">
+            <span class="portfolio-category">Branding</span>
+            <h3 class="portfolio-title">Aura Brand</h3>
+          </div>
+        </div>
+        
+        <div class="portfolio-item reveal-scale" id="portfolio-6">
+          <img src="https://images.unsplash.com/photo-1620121692029-d088224ddc74?w=600&h=600&fit=crop" alt="Abstract Lines">
+          <div class="portfolio-overlay">
+            <span class="portfolio-category">Web Design</span>
+            <h3 class="portfolio-title">Vertex Site</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section class="section" id="blog">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Journal</h2>
+        <p class="section-subtitle">Insights, thoughts, and stories from our studio</p>
+      </div>
+      
+      <div class="blog-grid">
+        <article class="blog-card reveal">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=600&h=400&fit=crop" alt="Design Process">
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-category">Design</span>
+              <span>•</span>
+              <span>5 min read</span>
+            </div>
+            <h3 class="blog-title">The Art of Minimal Design</h3>
+            <p class="blog-excerpt">Exploring how restraint and intentionality create more powerful visual experiences in the digital age.</p>
+            <a href="#" class="blog-link">
+              Read More
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+        
+        <article class="blog-card reveal">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=400&fit=crop" alt="Typography">
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-category">Typography</span>
+              <span>•</span>
+              <span>8 min read</span>
+            </div>
+            <h3 class="blog-title">Typography as Identity</h3>
+            <p class="blog-excerpt">How the right typeface can transform a brand's voice and create lasting emotional connections.</p>
+            <a href="#" class="blog-link">
+              Read More
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+        
+        <article class="blog-card reveal">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600&h=400&fit=crop" alt="Future Tech">
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-category">Technology</span>
+              <span>•</span>
+              <span>6 min read</span>
+            </div>
+            <h3 class="blog-title">The Future of Web</h3>
+            <p class="blog-excerpt">Emerging technologies and trends shaping how we build and experience the next generation of websites.</p>
+            <a href="#" class="blog-link">
+              Read More
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <h3>Let's Create<br>Something <span class="text-gold">Remarkable</span></h3>
+          <p class="contact-text">
+            Ready to elevate your digital presence? We'd love to hear about your project 
+            and explore how we can bring your vision to life.
+          </p>
+          
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              <div>
+                <p class="contact-item-text">Email</p>
+                <p class="contact-item-value">hello@mphdesign.com</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div>
+                <p class="contact-item-text">Location</p>
+                <p class="contact-item-value">Germany</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <form class="contact-form reveal-right" id="contactForm">
+          <div class="form-group">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" id="name" name="name" class="form-input" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" name="email" class="form-input" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" id="subject" name="subject" class="form-input">
+          </div>
+          
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" name="message" class="form-textarea" required></textarea>
+          </div>
+          
+          <button type="submit" class="form-submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="assets/logo.png" alt="mphdesign">
+          <span>mphdesign</span>
+        </div>
+        
+        <p class="footer-text">© 2026 mphdesign. All rights reserved.</p>
+        
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="Dribbble">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+              <rect x="2" y="9" width="4" height="12"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
